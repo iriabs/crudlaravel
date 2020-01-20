@@ -11,16 +11,21 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/hola',function(){
+Route::get('/hola', function(){
     return "Hola Mundo";
 });
 
-Route::get('/user/{id}',function($id){
-    return "Mi codigo es: " . $id;
+Route::get('/user/{id}', function($id){
+    return "Mi código es:" . $id;
 });
 
-Route::get('/', 'StudentController@index')->name('home');
+Route::get('/','StudentController@index' )->name('home');
+
+Route::get('/create','StudentController@create' )->name('create');
+
+Route::post('/create','StudentController@store' )->name('store');
+    

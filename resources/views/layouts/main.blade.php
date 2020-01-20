@@ -10,38 +10,30 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="{{ asset('estilos/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('mdbootstrap411/css/bootstrap.min.css') }}">
   <!-- Material Design Bootstrap -->
-  <link rel="stylesheet" href="{{ asset('estilos/css/mdb.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('mdbootstrap411/css/mdb.min.css') }}">
   <!-- Your custom styles (optional) -->
-  <link rel="stylesheet" href="{{ asset('estilos/css/style.css') }}">
+  <link rel="stylesheet" href="{{ asset('mdbootstrap411/css/style.css') }}">
 </head>
 <body>
 
   <!-- Start your project here-->  
-<!-- <button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-light">Light</button>
-<button type="button" class="btn btn-dark">Dark</button>
-<button type="button" class="btn btn-link">Link</button> -->
 
-@include ('layouts.navbar')
-@yield('content')
-@include ('layouts.footer')
+    @include('layouts.navbar')
+    @yield('content')
+    @include('layouts.footer')
+
   <!-- End your project here-->
 
   <!-- jQuery -->
-  <script type="text/javascript" src="{{ asset('estilos/js/jquery.min.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('mdbootstrap411/js/jquery.min.js') }}"></script>
   <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="{{ asset('estilos/js/popper.min.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('mdbootstrap411/js/popper.min.js') }}"></script>
   <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="{{ asset('estilos/js/bootstrap.min.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('mdbootstrap411/js/bootstrap.min.js') }}"></script>
   <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="{{ asset('estilos/js/mdb.min.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('mdbootstrap411/js/mdb.min.js') }}"></script>
   <!-- Your custom scripts (optional) -->
   <script type="text/javascript"></script>
 

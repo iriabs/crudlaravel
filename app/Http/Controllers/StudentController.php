@@ -9,5 +9,13 @@ class StudentController extends Controller
     public function index(){
         return view('welcome');
     }
+
+    public function create(){
+        return view('create');
+    }
+
+    public function store(Request $request){
+        return view('store');
+    }
 }
 

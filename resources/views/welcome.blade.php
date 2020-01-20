@@ -1,4 +1,4 @@
-@extends ('layouts.main')
-@section ('content')
-<h1> PAGINA HOME </h1>
+@extends('layouts.main')
+@section('content')
+<h1> Página HOME </h1>
 @endsection
